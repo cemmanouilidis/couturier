@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-10-09 22:59+0200\n"
+"PO-Revision-Date: 2010-07-18 11:06+0000\n"
+"Last-Translator: iTuxer <Unknown>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Launchpad-Export-Date: 2010-09-14 12:56+0000\n"
+"X-Generator: Launchpad (build Unknown)\n"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:113
+#: ../Couturier/gtk-gui/MainWindow.cs:114
+#: ../Couturier/gtk-gui/MainWindow.cs:119
+#: ../Couturier/gtk-gui/MainWindow.cs:120
+msgid "Document"
+msgstr "Documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:116
+#: ../Couturier/gtk-gui/MainWindow.cs:117
+#: ../Couturier/gtk-gui/MainWindow.cs:122
+#: ../Couturier/gtk-gui/MainWindow.cs:123
+msgid "Help"
+msgstr "Aiuto"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:125
+#: ../Couturier/gtk-gui/MainWindow.cs:126
+msgid "_Help"
+msgstr "_Aiuto"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:128
+#: ../Couturier/gtk-gui/MainWindow.cs:129
+msgid "_Info"
+msgstr "_Informazioni"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:131
+msgid "_Couturier"
+msgstr "_Couturier"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:132
+msgid "Donate"
+msgstr "Fai una donazione"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:134
+#: ../Couturier/gtk-gui/MainWindow.cs:135
+msgid "_Report a bug"
+msgstr "_Segnala un problema"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:137
+#: ../Couturier/gtk-gui/MainWindow.cs:147
+msgid "_Couturier Love"
+msgstr ""
+
+#: ../Couturier/gtk-gui/MainWindow.cs:138
+msgid "_Donate"
+msgstr "_Dona"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:140
+#: ../Couturier/gtk-gui/MainWindow.cs:141
+msgid "_New"
+msgstr "_Nuovo"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:143
+#: ../Couturier/gtk-gui/MainWindow.cs:144
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:146
+msgid "I _Love Couturier"
+msgstr ""
+
+#: ../Couturier/gtk-gui/MainWindow.cs:149
+#: ../Couturier/gtk-gui/MainWindow.cs:150
+msgid "Edit"
+msgstr "Modifica"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:152
+#: ../Couturier/gtk-gui/MainWindow.cs:153
+msgid "_Add Document"
+msgstr "_Aggiungi Documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:155
+#: ../Couturier/gtk-gui/MainWindow.cs:156
+msgid "_Remove Document"
+msgstr "_Rimuovi Documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:161
+msgid "Couturier - New Document"
+msgstr "Couturier - Nuovo Documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:224
+msgid "No Pages"
+msgstr "Nessuna Pagina"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:245
+msgid "Show Password"
+msgstr "Mostra password"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:259
+msgid "Document All.pdf"
+msgstr ""
+
+#: ../Couturier/gtk-gui/MainWindow.cs:282
+msgid "Select directory"
+msgstr "Seleziona cartella"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:296
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:305
+msgid "Save in directory:"
+msgstr "Salva nella directory:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:316
+msgid "Password:"
+msgstr "Password:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:332
+msgid "<b>Document Summary</b>"
+msgstr ""
+
+#: ../Couturier/gtk-gui/MainWindow.cs:343
+msgid "<b>Add your documents to the list below.</b>"
+msgstr "<b>Aggiungi i tuoi documenti alla lista qui sotto.</b>"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:433
+msgid "Combine"
+msgstr "Combina"

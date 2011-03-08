@@ -1,0 +1,29 @@
+<Combine fileversion="2.0">
+  <Policies>
+    <StandardHeader Text="" inheritsSet="MITX11License" />
+    <DotNetNamingPolicy DirectoryNamespaceAssociation="None" ResourceNamePolicy="FileFormatDefault" />
+    <TextStylePolicy FileWidth="120" TabWidth="4" TabsToSpaces="False" NoTabsAfterNonTabs="False" RemoveTrailingWhitespace="False" EolMarker="Native" />
+  </Policies>
+  <Configurations active="Debug">
+    <Configuration name="Debug" ctype="CombineConfiguration">
+      <Entry build="True" name="Couturier" configuration="Debug" />
+      <Entry build="True" name="CouturierTranslation" configuration="Debug" />
+      <Entry build="True" name="Couturier.Core" configuration="Debug" />
+    </Configuration>
+    <Configuration name="Release" ctype="CombineConfiguration">
+      <Entry build="True" name="Couturier" configuration="Release" />
+      <Entry build="True" name="CouturierTranslation" configuration="Release" />
+      <Entry build="True" name="Couturier.Core" configuration="Release" />
+    </Configuration>
+  </Configurations>
+  <StartMode startupentry="Couturier" single="True">
+    <Execute type="None" entry="Couturier" />
+    <Execute type="None" entry="CouturierTranslation" />
+    <Execute type="None" entry="Couturier.Core" />
+  </StartMode>
+  <Entries>
+    <Entry filename="Couturier/Couturier.mdp" />
+    <Entry filename="CouturierTranslation/CouturierTranslation.mdse" />
+    <Entry filename="Couturier.Core/Couturier.Core.mdp" />
+  </Entries>
+</Combine>

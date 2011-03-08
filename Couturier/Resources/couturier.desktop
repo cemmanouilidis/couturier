@@ -1,0 +1,10 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Couturier PDF Combiner
+Exec=couturier
+Terminal=false
+Icon=@expanded_libdir@/@PACKAGE@/Resources/couturier.svg
+MimeType=application/pdf;image/*;
+Categories=Office;

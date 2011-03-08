@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ItemType>TranslationProject</ItemType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2FCC6188-E652-4363-B29A-F9E480613B93}</ProjectGuid>
+    <translations>
+      <translations>
+        <Translation isoCode="de" />
+        <Translation isoCode="el" />
+        <Translation isoCode="it" />
+        <Translation isoCode="fr" />
+        <Translation isoCode="cs" />
+        <Translation isoCode="es" />
+        <Translation isoCode="ms" />
+        <Translation isoCode="pt_BR" />
+        <Translation isoCode="gl" />
+        <Translation isoCode="he" />
+        <Translation isoCode="pl" />
+        <Translation isoCode="ru" />
+        <Translation isoCode="tr" />
+        <Translation isoCode="uk" />
+        <Translation isoCode="nl" />
+        <Translation isoCode="zh" />
+        <Translation isoCode="ca" />
+      </translations>
+    </translations>
+    <outputType>RelativeToOutput</outputType>
+    <packageName>CouturierTranslation</packageName>
+    <ReleaseVersion>0.5</ReleaseVersion>
+  </PropertyGroup>
+</Project>

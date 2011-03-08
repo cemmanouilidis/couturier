@@ -1,0 +1,8 @@
+<CombineEntry releaseversion="0.1" name="CouturierTranslation" fileversion="2.0" packageName="" outputType="SystemPath" ItemType="TranslationProject" ctype="TranslationProject">
+  <translations>
+    <Translation isoCode="de" />
+    <Translation isoCode="el" />
+    <Translation isoCode="it" />
+    <Translation isoCode="fr" />
+  </translations>
+</CombineEntry>

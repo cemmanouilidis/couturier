@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{14CFF6A5-6E1D-459D-A317-450A89FDFC20}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Couturier.Core</AssemblyName>
+    <ReleaseVersion>0.5</ReleaseVersion>
+    <RootNamespace>Couturier.Core</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="gnome-sharp, Version=2.24.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f">
+      <Package>gnome-sharp-2.0</Package>
+    </Reference>
+    <Reference Include="itextsharp, Version=4.1.2.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\iText\itextsharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="PDF\iText\PDFConverterIText.cs" />
+    <Compile Include="PDF\iText\PDFCreatorIText.cs" />
+    <Compile Include="PDF\iText\PDFEncryptIText.cs" />
+    <Compile Include="PDF\iText\PDFInfoIText.cs" />
+    <Compile Include="PDF\IPDFConverter.cs" />
+    <Compile Include="PDF\IPDFCreator.cs" />
+    <Compile Include="PDF\IPDFEncrypt.cs" />
+    <Compile Include="PDF\IPDFInfo.cs" />
+    <Compile Include="PDF\PDFCreator.cs" />
+    <Compile Include="PDF\PDFUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AUTHORS" />
+    <None Include="LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PDF\" />
+    <Folder Include="PDF\iText\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

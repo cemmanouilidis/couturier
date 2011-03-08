@@ -1,0 +1,236 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Couturier 0.3.3\n"
+"POT-Creation-Date: 2010-09-14 14:48:26+0200\n"
+"PO-Revision-Date: 2010-09-14 12:48:43+0200\n"
+"Last-Translator: Emmanuel <info@simple-linux.com>\n"
+"Language-Team: Italian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: MonoDevelop Gettext addin\n"
+
+#: ../Couturier/MainWindow.cs:53
+msgid "Preview"
+msgstr "Anteprima"
+
+#: ../Couturier/MainWindow.cs:54 ../Couturier/MainWindow.cs:409
+#: ../Couturier/gtk-gui/MainWindow.cs:111
+#: ../Couturier/gtk-gui/MainWindow.cs:112
+#: ../Couturier/gtk-gui/MainWindow.cs:117
+#: ../Couturier/gtk-gui/MainWindow.cs:118
+msgid "Document"
+msgstr "Documento"
+
+#: ../Couturier/MainWindow.cs:65 ../Couturier/gtk-gui/MainWindow.cs:219
+msgid "No Pages"
+msgstr "Nessuna pagina"
+
+#: ../Couturier/MainWindow.cs:66
+msgid "Add new document"
+msgstr "Aggiungi un nuovo documento"
+
+#: ../Couturier/MainWindow.cs:67
+msgid "Remove selected document"
+msgstr "Rimuovi il documento selezionato"
+
+#: ../Couturier/MainWindow.cs:68
+msgid "Clear list"
+msgstr "Cancella lista"
+
+#: ../Couturier/MainWindow.cs:226
+msgid "DragNDrop failed"
+msgstr "Clicca e trascina fallito"
+
+#: ../Couturier/MainWindow.cs:235
+msgid "Choose document to open"
+msgstr "Scegli il documento da aprire"
+
+#: ../Couturier/MainWindow.cs:238
+msgid "Cancel"
+msgstr "Annulla"
+
+#: ../Couturier/MainWindow.cs:239
+msgid "Open"
+msgstr "Apri"
+
+#: ../Couturier/MainWindow.cs:245
+msgid "Documents supported by Couturier"
+msgstr "Documenti supportati da Couturier"
+
+#: ../Couturier/MainWindow.cs:250
+msgid "PDF Files"
+msgstr "File PDF"
+
+#: ../Couturier/MainWindow.cs:254
+msgid "Image Files"
+msgstr "File immagine"
+
+#: ../Couturier/MainWindow.cs:259
+msgid "All Files"
+msgstr "Tutti i file"
+
+#: ../Couturier/MainWindow.cs:349
+msgid "Documents All.pdf"
+msgstr "Unione documenti.pdf"
+
+#: ../Couturier/MainWindow.cs:352 ../Couturier/gtk-gui/MainWindow.cs:156
+msgid "Couturier - New Document"
+msgstr "Couturier - Nuovo documento"
+
+#: ../Couturier/MainWindow.cs:362 ../Couturier/MainWindow.cs:581
+msgid "No pages"
+msgstr "Nessuna pagina"
+
+#: ../Couturier/MainWindow.cs:386
+msgid "Could not add document \"{0}\"."
+msgstr "Impossibile aggiungere il documento \"{0}\"."
+
+#: ../Couturier/MainWindow.cs:387 ../Couturier/MainWindow.cs:523
+msgid "The following error occurred:"
+msgstr "Si è verificato il seguente errore:"
+
+#: ../Couturier/MainWindow.cs:409 ../Couturier/MainWindow.cs:585
+msgid "Pages"
+msgstr "Pagine"
+
+#: ../Couturier/MainWindow.cs:469
+msgid "A document with the name \"{0}\" exists already."
+msgstr "Un documento di nome \"{0}\" esiste già."
+
+#: ../Couturier/MainWindow.cs:470
+msgid "Do you wan't to replace this document?"
+msgstr "Vuoi sostituire questo documento?"
+
+#: ../Couturier/MainWindow.cs:522
+msgid "Could not create PDF Document."
+msgstr "Impossibile creare il documento PDF."
+
+#: ../Couturier/MainWindow.cs:524
+msgid "Please check your settings and try again."
+msgstr "Si prega di verificare le impostazioni e riprovare."
+
+#: ../Couturier/MainWindow.cs:585
+msgid "Page"
+msgstr "Pagina"
+
+#: ../Couturier/MainWindow.cs:636
+msgid "If you continue, all changes will be lost"
+msgstr "Se continui, tutti i cambiamenti saranno persi"
+
+#: ../Couturier/MainWindow.cs:700
+msgid "Licensed under the terms of GPLv3"
+msgstr "Concesso in licenza sotto i termini della GPLv3"
+
+#: ../Couturier/MainWindow.cs:703
+msgid "(c) 2009 by Couturier contributors"
+msgstr "(c) 2009 dai collaboratori di Couturier"
+
+#: ../Couturier/MainWindow.cs:705
+msgid "(c) 1999-2009 by itextsharp.sourceforge.net"
+msgstr "(c) 1999-2009 da itextsharp.sourceforge.net"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:114
+#: ../Couturier/gtk-gui/MainWindow.cs:115
+#: ../Couturier/gtk-gui/MainWindow.cs:120
+#: ../Couturier/gtk-gui/MainWindow.cs:121
+msgid "Help"
+msgstr "Aiuto"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:123
+#: ../Couturier/gtk-gui/MainWindow.cs:124
+msgid "_Help"
+msgstr "Ai_uto"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:126
+msgid "_Couturier"
+msgstr "_Couturier"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:127
+msgid "Donate"
+msgstr "Dona"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:129
+#: ../Couturier/gtk-gui/MainWindow.cs:130
+msgid "_Report a bug"
+msgstr "_Segnala un errore"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:132
+#: ../Couturier/gtk-gui/MainWindow.cs:133
+msgid "_New"
+msgstr "_Nuovo"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:135
+#: ../Couturier/gtk-gui/MainWindow.cs:136
+msgid "_Quit"
+msgstr "_Esci"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:138
+msgid "I _Love Couturier"
+msgstr "Mi _piace Couturier"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:139
+msgid "_Couturier Love"
+msgstr "Amare _Couturier"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:141
+#: ../Couturier/gtk-gui/MainWindow.cs:142
+msgid "Edit"
+msgstr "Modifica"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:144
+#: ../Couturier/gtk-gui/MainWindow.cs:145
+msgid "_Add Document"
+msgstr "_Aggiungi un documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:147
+#: ../Couturier/gtk-gui/MainWindow.cs:148
+msgid "_Remove Document"
+msgstr "_Rimuovi il documento"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:150
+#: ../Couturier/gtk-gui/MainWindow.cs:151
+msgid "_About"
+msgstr "Inform_azioni"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:240
+msgid "Show Password"
+msgstr "Mostra password"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:254
+msgid "Document All.pdf"
+msgstr "Unione documenti.pdf"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:277
+msgid "Select directory"
+msgstr "Seleziona la cartella"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:291
+msgid "Name:"
+msgstr "Nome:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:300
+msgid "Save in directory:"
+msgstr "Salva nella cartella:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:311
+msgid "Password:"
+msgstr "Password:"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:327
+msgid "<b>Document Summary</b>"
+msgstr "<b>Sommario documento</b>"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:338
+msgid "<b>Add your documents to the list below.</b>"
+msgstr "<b>Aggiungi i documenti alla lista qui sotto.</b>"
+
+#: ../Couturier/gtk-gui/MainWindow.cs:426
+msgid "Combine"
+msgstr "Unisci"
+
+#~ msgid "_Donate"
+#~ msgstr "_Dona"
+
+#~ msgid "_Info"
+#~ msgstr "_Informazioni"

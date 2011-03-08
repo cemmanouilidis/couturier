@@ -1,0 +1,46 @@
+
+Revision: 0.5
+Date: 14th September 2010
+Author(s): Charalampos Emmanouilidis
+
+Changes:
+
+- try to fix the broken monodevelop project structure
+  (desktop file and svg icon where not properly deployed)
+  - re-added couturier.desktop file and changes deploy settings
+  - re-added couturier.svg file and changes deploy settings
+   
+
+- downloaded and added translation files from launchpad, new translations are
+  - Brazilian Portuguese
+  - Czech
+  - Galician
+  - Hebrew
+  - Malay
+  - Polish
+  - Russian
+  - Spanish
+  - Turkish
+  - Ukrainian
+
+
+Known issues:
+  What's not working yet:
+  - Translation Package is not deployed through generated source-tarball
+
+  - commandline args are ignored. This should be changed, to allow nautilus to 
+    start couturier and pass pdf and/or image files.
+
+  - allow multiple selection (MS) of documents which are in the "to-be-combined-list".
+    MS whould allow to delete more than just one document from the list.
+  
+  - delete button does not work for selected items
+
+  - changes gnome-open calls to xdg-open (for KDE/XFCE users)
+  
+  - Loading/Importing of encrypted pdf documents are not possible.
+
+  - Warn if the output file (the combined one) has the same name is one of the files
+    in the "to-be-combined-list".
+
+
