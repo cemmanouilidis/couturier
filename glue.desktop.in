@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Glue
+_Comment=Glue application
+Categories=GNOME;Utility;
+Exec=glue
+Icon=glue
+Terminal=false
+Type=Application
