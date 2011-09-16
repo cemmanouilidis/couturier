@@ -1,2 +1,6 @@
-tarballs/*
+Couturier.*.dll
 *.userprefs
+*.exe
+Couturier/gtk-gui/generated.cs
+Couturier/gtk-gui/MainWindow.cs
+Couturier/Couturier.pidb

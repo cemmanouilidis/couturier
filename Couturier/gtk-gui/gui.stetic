@@ -48,14 +48,6 @@
         <property name="Label" translatable="yes">Help</property>
         <property name="ShortLabel" translatable="yes">Help</property>
       </action>
-      <action id="HelpAction2">
-        <property name="Type">Action</property>
-        <property name="Accelerator">F1</property>
-        <property name="Label" translatable="yes">_Help</property>
-        <property name="ShortLabel" translatable="yes">_Help</property>
-        <property name="StockId">gtk-help</property>
-        <signal name="Activated" handler="OnHilfeActionActivated" />
-      </action>
       <action id="CouturierAction">
         <property name="Type">Action</property>
         <property name="Label" translatable="yes">_Couturier</property>
