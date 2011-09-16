@@ -512,7 +512,7 @@ public partial class MainWindow: Gtk.Window
 				System.Diagnostics.Process proc = new System.Diagnostics.Process();
 				proc.EnableRaisingEvents = false;		
 				
-				proc.StartInfo.FileName = "gnome-open";
+				proc.StartInfo.FileName = "xdg-open";
 				proc.StartInfo.Arguments = "\"" + _File + "\"";
 				proc.Start();
 				proc.WaitForExit();
@@ -594,12 +594,12 @@ public partial class MainWindow: Gtk.Window
 
 	protected virtual void OnReportABugActionActivated (object sender, System.EventArgs e)
 	{
-		string url = "https://bugs.launchpad.net/couturier/+filebug/+login";
+		string url = "https://github.com/cemmanouilidis/couturier/issues";
 		
 		System.Diagnostics.Process proc = new System.Diagnostics.Process();
 		proc.EnableRaisingEvents = false;		
 				
-		proc.StartInfo.FileName = "gnome-open";
+		proc.StartInfo.FileName = "xdg-open";
 		proc.StartInfo.Arguments = url;
 		proc.Start();
 		proc.WaitForExit();	
@@ -612,15 +612,10 @@ public partial class MainWindow: Gtk.Window
 		System.Diagnostics.Process proc = new System.Diagnostics.Process();
 		proc.EnableRaisingEvents = false;		
 				
-		proc.StartInfo.FileName = "gnome-open";
+		proc.StartInfo.FileName = "xdg-open";
 		proc.StartInfo.Arguments = url;
 		proc.Start();
 		proc.WaitForExit();	
-	}
-
-	protected virtual void OnDonateActionActivated (object sender, System.EventArgs e)
-	{
-	
 	}
 
 	protected virtual void OnBeendenActionActivated (object sender, System.EventArgs e)
@@ -650,20 +645,7 @@ public partial class MainWindow: Gtk.Window
 		System.Diagnostics.Process proc = new System.Diagnostics.Process();
 		proc.EnableRaisingEvents = false;		
 				
-		proc.StartInfo.FileName = "gnome-open";
-		proc.StartInfo.Arguments = url;
-		proc.Start();
-		proc.WaitForExit();	
-	}
-
-	protected virtual void OnHilfeActionActivated (object sender, System.EventArgs e)
-	{
-		string url = "https://answers.launchpad.net/couturier";
-		
-		System.Diagnostics.Process proc = new System.Diagnostics.Process();
-		proc.EnableRaisingEvents = false;		
-				
-		proc.StartInfo.FileName = "gnome-open";
+		proc.StartInfo.FileName = "xdg-open";
 		proc.StartInfo.Arguments = url;
 		proc.Start();
 		proc.WaitForExit();	
@@ -697,7 +679,7 @@ public partial class MainWindow: Gtk.Window
     {
 		AboutDialog about = new Gtk.AboutDialog();
 		
-		about.Version = "0.5";
+		about.Version = "0.6";
 		about.License =  Catalog.GetString("Licensed under the terms of GPLv3");
 		about.License += "\nhttp://www.gnu.org/licenses/gpl-3.0.html";
 		

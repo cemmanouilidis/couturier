@@ -28,6 +28,6 @@
     </translations>
     <outputType>RelativeToOutput</outputType>
     <packageName>CouturierTranslation</packageName>
-    <ReleaseVersion>0.5</ReleaseVersion>
+    <ReleaseVersion>0.6</ReleaseVersion>
   </PropertyGroup>
 </Project>
