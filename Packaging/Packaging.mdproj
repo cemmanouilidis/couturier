@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ItemType>PackagingProject</ItemType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D81D1E86-4111-46CD-98F6-25784617FD0F}</ProjectGuid>
+    <Packages>
+      <Packages>
+        <Package name="Tarball">
+          <Builder TargetDirectory="..\tarballs" DefaultConfiguration="Debug" ctype="TarballDeployTarget">
+            <ChildEntries>
+              <SolutionItemReference path="..\Couturier\Couturier.csproj" />
+              <SolutionItemReference path="..\CouturierTranslation\CouturierTranslation.mdproj" />
+              <SolutionItemReference path="..\Couturier.Core\Couturier.Core.csproj" />
+            </ChildEntries>
+            <RootEntry path="..\Couturier.sln" id=":root:" />
+          </Builder>
+        </Package>
+      </Packages>
+    </Packages>
+    <ReleaseVersion>0.5</ReleaseVersion>
+  </PropertyGroup>
+</Project>
