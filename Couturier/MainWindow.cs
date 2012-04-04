@@ -12,8 +12,8 @@ using Mono.Unix;
 using Gtk;
 using Gdk;
 using Couturier;
-using Gnome;
 using Couturier.Core.PDF;
+
 
 public partial class MainWindow: Gtk.Window
 {
@@ -40,18 +40,7 @@ public partial class MainWindow: Gtk.Window
 		DocumentStore.RowDeleted += OnRowDeleted;
 		DocumentStore.RowChanged += OnRowChanged;
 		
-		
-		try {
-			this.imageDocument.Pixbuf = Gnome.IconTheme.Default.LoadIcon("gnome-mime-application-pdf", 128, Gtk.IconLookupFlags.GenericFallback);
-            this.Icon = Gnome.IconTheme.Default.LoadIcon("couturier", 128, Gtk.IconLookupFlags.GenericFallback);
-		}
-		catch (Exception err)
-		{
-			System.Console.WriteLine(err.Message);
-			System.Console.WriteLine(err.StackTrace);
-		}
-		
-		treeviewDocuments.AppendColumn (Mono.Unix.Catalog.GetString("Preview"), new Gtk.CellRendererPixbuf(), "pixbuf", 0);
+		//treeviewDocuments.AppendColumn (Mono.Unix.Catalog.GetString("Preview"), new Gtk.CellRendererPixbuf(), "pixbuf", 0);
 		treeviewDocuments.AppendColumn (Mono.Unix.Catalog.GetString("Document"), new Gtk.CellRendererText(), "markup", 1);
         	
 		TargetEntry[] Targets = new TargetEntry[]{ 

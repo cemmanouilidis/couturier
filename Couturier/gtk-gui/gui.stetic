@@ -6,8 +6,7 @@
   </configuration>
   <import>
     <widget-library name="glade-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="gnome-sharp, Version=2.24.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
-    <widget-library name="../bin/Release/Couturier.exe" internal="true" />
+    <widget-library name="../bin/Debug/Couturier.exe" internal="true" />
   </import>
   <icon-factory>
     <icon-set id="Favorite">
@@ -26,7 +25,7 @@
       </source>
     </icon-set>
   </icon-factory>
-  <widget class="Gtk.Window" id="MainWindow" design-size="483 604">
+  <widget class="Gtk.Window" id="MainWindow" design-size="474 602">
     <action-group name="Default">
       <action id="DocumentAction">
         <property name="Type">Action</property>
@@ -189,7 +188,7 @@
                                 <property name="WidthRequest">130</property>
                                 <property name="HeightRequest">130</property>
                                 <property name="Sensitive">False</property>
-                                <property name="Pixbuf">stock:gnome-pdf Dialog</property>
+                                <property name="Pixbuf">resource:Couturier.gnome-mime-application-pdf-128.png</property>
                               </widget>
                               <packing>
                                 <property name="Position">0</property>

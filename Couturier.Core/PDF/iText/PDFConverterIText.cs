@@ -18,9 +18,12 @@
 
 using System;
 using System.IO;
-using Gnome;
+using System.Diagnostics;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
+
+
+
 
 namespace Couturier.Core.PDF
 {
@@ -31,11 +34,19 @@ namespace Couturier.Core.PDF
 			FileInfo info = new FileInfo(Src);
 			PDFFile = Src;
 			bool succeeded = true;
-				
-			Gnome.Vfs.Uri uri = new Gnome.Vfs.Uri(Gnome.Vfs.Uri.GetUriFromLocalPath(info.FullName));
-			Gnome.Vfs.MimeType mime = new Gnome.Vfs.MimeType(uri);
-				
-			if (mime != null && mime.Name.ToLower().StartsWith("image"))
+			
+			
+			Process cmd = new Process();
+			cmd.StartInfo.UseShellExecute = false;
+			cmd.StartInfo.RedirectStandardOutput = true;
+			cmd.StartInfo.FileName = "file";
+			cmd.StartInfo.Arguments = info.FullName;
+			cmd.Start();
+			
+			cmd.WaitForExit();
+			string mime = cmd.StandardOutput.ReadToEnd();
+			
+			if (mime != null && mime.ToLower().Contains("image"))
 			{	
 				Document document = null;
 				try 
