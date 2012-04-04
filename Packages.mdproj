@@ -8,8 +8,8 @@
     <ReleaseVersion>0.6</ReleaseVersion>
     <Packages>
       <Packages>
-        <Package name="Tarball-Release">
-          <Builder TargetDirectory="." DefaultConfiguration="Release" ctype="TarballDeployTarget">
+        <Package name="Tarball">
+          <Builder TargetDirectory="tarballs" DefaultConfiguration="Release" ctype="TarballDeployTarget">
             <ChildEntries>
               <SolutionItemReference path="Couturier\Couturier.csproj" />
               <SolutionItemReference path="CouturierTranslation\CouturierTranslation.mdproj" />
