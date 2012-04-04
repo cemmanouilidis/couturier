@@ -99,8 +99,5 @@
     <Content Include="Resources\couturier-64.png">
       <DeployService-UseProjectRelativePath>true</DeployService-UseProjectRelativePath>
     </Content>
-    <Content Include="gnome-mime-application-pdf-96.png">
-      <DeployService-UseProjectRelativePath>true</DeployService-UseProjectRelativePath>
-    </Content>
   </ItemGroup>
 </Project>
