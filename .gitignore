@@ -3,4 +3,6 @@ Couturier.*.dll
 *.exe
 Couturier/gtk-gui/generated.cs
 Couturier/gtk-gui/MainWindow.cs
-Couturier/Couturier.pidb
+*.pidb
+Couturier.Core/bin
+Couturier/bin
