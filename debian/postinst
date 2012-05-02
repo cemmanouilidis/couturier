@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
 import sys
 import os
@@ -10,7 +10,6 @@ logo_svg    = '%s/couturier.svg' % instpath
 desktopfile      = 'couturier.desktop'
 desktopfile_src  = '%s/%s' % (instpath, desktopfile)
 desktopfile_dest = '/usr/share/applications/%s' % desktopfile
-
 
 if os.path.exists (desktopfile_src):
 
