@@ -1,6 +1,6 @@
 # Couturier
 
-## Couturier PDF merger 
+## PDF merge app for Linux 
 Couturier is a small utility for merging multiple PDF documents and images into one document.
 
 ## Ubuntu
