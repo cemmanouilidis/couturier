@@ -1,19 +1,15 @@
 Source: couturier
 Section: utils
-Priority: optional
-Maintainer: Charalampos Emmanouilidis <C.Emmanouilidis@yahoo.de>
-Build-Depends: debhelper (>= 4.0.0), autotools-dev, mono-devel, gnome-sharp2
-Standards-Version: 3.6.2
+Priority: extra
+Maintainer: Charalampos Emmanouilids <c.emmanouilidis@yahoo.de>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, mono-devel, gnome-sharp2
+Standards-Version: 3.9.2
+Homepage: https://github.com/cemmanouilidis/couturier/
+#Vcs-Git: git://github.com/cemmanouilidis/couturier.git
 
 Package: couturier
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}, mono-runtime, gnome-sharp2, libmono-posix2.0-cil
-Recommends: 
-Suggests: 
-Pre-Depends: 
-Conflicts: 
-Provides: 
-Replaces: 
-Description: PDF merge application for Linux.
-  Couturier is a PDF merge application that allows to merge multiple documents like PDF and/or images into one single PDF document.
- The application provides an easy to use user interface with modern technologies like drag and drop.
+Description: PDF merge app for Linux.
+    Couturier is a small utility for merging multiple PDF documents and images
+    into one document.
