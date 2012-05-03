@@ -1,0 +1,17 @@
+#!/usr/bin/env bash 
+
+#http://abz89.wordpress.com/2008/03/24/building-debian-deb-package-from-tarball-source-targz/
+rm -f couturier_*
+
+cd $1
+cd Couturier
+
+patch < ../../patch-add-assembly-to-programmfiles-in-makefile-am.diff
+patch < ../../patch-add-assembly-to-programmfiles-in-makefile-in.diff
+cd .. 
+dh_make -i --createorig -c gpl3 -e c.emmanouilidis@yahoo.de < . 
+cp ../../debian/* debian/.
+
+dpkg-buildpackage -rfakeroot -uc -us 
+
+cd ..

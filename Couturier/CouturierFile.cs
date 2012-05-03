@@ -20,7 +20,7 @@ using System;
 using System.IO;
 using Gdk;
 using Gtk;
-using Gnome;
+using Gnome.Vfs;
 using Couturier.Core.PDF;
 
 namespace Couturier
@@ -29,9 +29,9 @@ namespace Couturier
 	{	
 		public CouturierFile(String _File)
 		{
-			if (File.Exists(_File))
+			if (System.IO.File.Exists(_File))
 			{
-				FileInfo info = new FileInfo(_File);
+				System.IO.FileInfo info = new System.IO.FileInfo(_File);
 				
 				this.Exists   = true;
 				this.FullName = info.FullName;
@@ -105,23 +105,26 @@ namespace Couturier
 		
 		public Gdk.Pixbuf GetThumbnail ()
 		{
-			return GetThumbnail(ThumbnailSize.Normal);
+			return GetThumbnail(1);
+			//return GetThumbnail(ThumbnailSize.Normal);
 		}
 		
-		public Gdk.Pixbuf GetThumbnail (ThumbnailSize size)
+		public Gdk.Pixbuf GetThumbnail (int size)
 		{
-			ThumbnailFactory factory = new ThumbnailFactory(size);
 			Gdk.Pixbuf thumb = null;
+			
+			/*	
+			ThumbnailFactory factory = new ThumbnailFactory(size);
 			
 			if (factory.CanThumbnail(Uri.ToString(), MimeType.Name, DateTime.Now))
 			{
 				thumb = factory.GenerateThumbnail(Uri.ToString(), MimeType.Name);
-/*				
+			
 				if (thumb != null)
 				{
 					factory.SaveThumbnail(thumb, Uri.ToString(), DateTime.Now);
 				}
-*/
+
 			}
 			else if (MimeType.Name.ToLower() == "application/pdf")
 			{
@@ -135,7 +138,7 @@ namespace Couturier
 			{
 				thumb = Gnome.IconTheme.Default.LoadIcon("file", 92, Gtk.IconLookupFlags.GenericFallback);
 			}
-
+			*/
 			return thumb;
 		}
 		

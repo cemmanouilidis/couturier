@@ -18,6 +18,7 @@
 
 using System;
 using System.IO;
+using System.Diagnostics;
 using iTextSharp.text.pdf;
 
 namespace Couturier.Core.PDF
@@ -33,10 +34,17 @@ namespace Couturier.Core.PDF
 			int pages = 1;
 			FileInfo info = new FileInfo(Src);
 			
-			Gnome.Vfs.Uri uri = new Gnome.Vfs.Uri(Gnome.Vfs.Uri.GetUriFromLocalPath(info.FullName));
-			Gnome.Vfs.MimeType mime = new Gnome.Vfs.MimeType(uri);
+			Process cmd = new Process();
+			cmd.StartInfo.UseShellExecute = false;
+			cmd.StartInfo.RedirectStandardOutput = true;
+			cmd.StartInfo.FileName = "file";
+			cmd.StartInfo.Arguments = info.FullName;
+			cmd.Start();
 			
-			if (mime.Name.ToLower() == "application/pdf")
+			cmd.WaitForExit();
+			string mime = cmd.StandardOutput.ReadToEnd();
+			
+			if (mime.ToLower().Contains ("pdf"))
 			{	
 				PdfReader reader = new PdfReader(Src);
 				pages = reader.NumberOfPages;

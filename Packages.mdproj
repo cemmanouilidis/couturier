@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <ItemType>PackagingProject</ItemType>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F252865A-792C-4729-B370-FC96F034EA42}</ProjectGuid>
+    <ProjectGuid>{6DBB10B3-C65A-4533-8920-A077F35F146A}</ProjectGuid>
+    <ReleaseVersion>0.6</ReleaseVersion>
     <Packages>
       <Packages>
         <Package name="Tarball">
-          <Builder TargetDirectory="..\..\..\..\..\Desktop\" DefaultConfiguration="Release" ctype="TarballDeployTarget">
+          <Builder TargetDirectory="tarballs" DefaultConfiguration="Release" ctype="TarballDeployTarget">
             <ChildEntries>
               <SolutionItemReference path="Couturier\Couturier.csproj" />
               <SolutionItemReference path="CouturierTranslation\CouturierTranslation.mdproj" />
               <SolutionItemReference path="Couturier.Core\Couturier.Core.csproj" />
-              <SolutionItemReference path="TestTranslations\TestTranslations.mdproj" />
             </ChildEntries>
             <RootEntry path="Couturier.sln" id=":root:" />
           </Builder>
         </Package>
       </Packages>
     </Packages>
-    <ReleaseVersion>0.5</ReleaseVersion>
   </PropertyGroup>
 </Project>

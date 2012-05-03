@@ -1,0 +1,8 @@
+Couturier.*.dll
+*.userprefs
+*.exe
+Couturier/gtk-gui/generated.cs
+Couturier/gtk-gui/MainWindow.cs
+*.pidb
+Couturier.Core/bin
+Couturier/bin
