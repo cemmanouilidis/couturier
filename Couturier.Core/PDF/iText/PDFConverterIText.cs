@@ -21,8 +21,7 @@ using System.IO;
 using System.Diagnostics;
 using iTextSharp.text.pdf;
 using iTextSharp.text;
-
-
+using Gnome.Vfs;
 
 
 namespace Couturier.Core.PDF
@@ -31,22 +30,14 @@ namespace Couturier.Core.PDF
 	{		
 		bool IPDFConverter.ConvertToPDF (string Src, out string PDFFile)
 		{
-			FileInfo info = new FileInfo(Src);
+			System.IO.FileInfo info = new System.IO.FileInfo(Src);
 			PDFFile = Src;
 			bool succeeded = true;
 			
-			
-			Process cmd = new Process();
-			cmd.StartInfo.UseShellExecute = false;
-			cmd.StartInfo.RedirectStandardOutput = true;
-			cmd.StartInfo.FileName = "file";
-			cmd.StartInfo.Arguments = info.FullName;
-			cmd.Start();
-			
-			cmd.WaitForExit();
-			string mime = cmd.StandardOutput.ReadToEnd();
-			
-			if (mime != null && mime.ToLower().Contains("image"))
+			Gnome.Vfs.Uri uri = new Gnome.Vfs.Uri(Gnome.Vfs.Uri.GetUriFromLocalPath(info.FullName));
+            Gnome.Vfs.MimeType mime = new Gnome.Vfs.MimeType(uri);
+                
+            if (mime != null && mime.Name.ToLower().StartsWith("image"))
 			{	
 				Document document = null;
 				try 
@@ -85,7 +76,7 @@ namespace Couturier.Core.PDF
 				document.Close();	
 			}	
 
-			if (! File.Exists(PDFFile))
+			if (! System.IO.File.Exists(PDFFile))
 			{
 				PDFFile = null;
 				succeeded = false;
