@@ -21,6 +21,7 @@ using System.IO;
 using Gdk;
 using Gtk;
 using Gnome.Vfs;
+using Gnome;
 using Couturier.Core.PDF;
 
 namespace Couturier
@@ -38,7 +39,8 @@ namespace Couturier
 				this.Name     = info.Name;
 				this.Uri      = new Gnome.Vfs.Uri (Gnome.Vfs.Uri.GetUriFromLocalPath(info.FullName));
 				this.MimeType = new Gnome.Vfs.MimeType (this.Uri);
-                try
+                
+				try
                 {
 				    this.NumberOfPages = PDFUtils.Instance.GetNumberOfPages (_File); 
                     this.IsValid = true;
