@@ -51,6 +51,6 @@ Global
 		$6.TabWidth = 4
 		$6.inheritsSet = Mono
 		$6.inheritsScope = text/plain
-		version = 0.6
+		version = 0.6.2
 	EndGlobalSection
 EndGlobal

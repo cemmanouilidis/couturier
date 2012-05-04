@@ -8,9 +8,8 @@
     <ProjectGuid>{118E43C4-1376-495E-9188-27DA54184CDF}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AssemblyName>Couturier</AssemblyName>
-    <ReleaseVersion>0.6</ReleaseVersion>
+    <ReleaseVersion>0.6.2</ReleaseVersion>
     <RootNamespace>Couturier</RootNamespace>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

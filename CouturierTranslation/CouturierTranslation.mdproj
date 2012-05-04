@@ -28,7 +28,7 @@
     </translations>
     <outputType>RelativeToOutput</outputType>
     <packageName>CouturierTranslation</packageName>
-    <ReleaseVersion>0.6</ReleaseVersion>
+    <ReleaseVersion>0.6.2</ReleaseVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
   </PropertyGroup>

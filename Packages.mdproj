@@ -5,7 +5,7 @@
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6DBB10B3-C65A-4533-8920-A077F35F146A}</ProjectGuid>
-    <ReleaseVersion>0.6</ReleaseVersion>
+    <ReleaseVersion>0.6.2</ReleaseVersion>
     <Packages>
       <Packages>
         <Package name="Tarball">
